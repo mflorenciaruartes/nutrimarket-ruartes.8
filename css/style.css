@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+h1 {
+    color: rgba(34, 91, 16, 1);
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0;
+    animation-name: aparecer2;
+    animation-duration: 2s;
+}
+h2 {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-top: 10px;
+}
+@keyframes aparecer2{
+    from{opacity: 0;}
+    to{opacity: 1;}
+    }
+h3{
+    color:black;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+p{
+    color:black;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.bg-green{
+    background-color:rgba(34, 91, 16, .8);
+}
+
+nav div a{
+    display: flex;
+    justify-content: center;
+}
+
+nav div a img{
+    width: 50%;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.bg-greenl1{
+    background-color:rgba(200, 214, 195, 1);
+}
+.bg-greenl2{
+    background-color: rgba(227, 234, 225, 1);
+}
+.bg-greenl3{
+    background-color: rgba(117, 152, 106, 1);
+}
+.bg-greenl4{
+    background-color: rgba(34, 91, 16, 1);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+figcaption {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+}
+section div figure a {
+    display: flex;
+    justify-content: center;
+}
+section div figure a img {
+    width: 70%;
+}
+section article a {
+    color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+section article div img{
+    width: 70%;
+}
+.index__form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+form {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+form label, input {
+    display: block;
+    color: black;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: 400;
+    width: 60%;
+}
+form textarea {
+    color: black;
+    width: 95%;
+    height: 30vh;
+}
+.input__enviar {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.section__iframe--md{
+    width: 90%;
+    height: 30%;
+}
+footer {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: rgba(34, 91, 16, .8);
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(227, 234, 225, 1);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+footer a img {
+    width: 40px;
+}
+.bg-linear1{
+    background: linear-gradient(to right,rgba(34, 91, 16, 1),white);
+}
+.gonatural__aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside ul {
+    list-style: none;
+    line-height: 1.5;
+}
+
+aside ul a{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-decoration: none;
+}
+.color-green {
+    color: rgba(34, 91, 16, 1);
+}
+@media (min-width: 992px){
+
+nav div a img{
+    width: 80%;
+}
+.nav__w{
+    width: 100%;
+}
+.nav__ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+nav ul li a {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 2.5em;  
+}
+h2 {
+    font-size: 2em;
+}
+
+section div figure a img {
+    width: 100%;
+}
+section article div img{
+    width: 100%;
+}
+h3{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.index__form {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /* padding-left: 20px; */
+}
+.index__form-div {
+    align-items: flex-start;
+    text-align: start;
+    padding-left: 20px;
+}
+footer {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "nav nav"
+    "header header"
+    "h1 h1"
+    "section aside"
+    "pie pie";
+} 
+.mainNav{
+    grid-area: nav;
+}
+
+.header{
+    grid-area: header;
+}
+.titulo{
+    grid-area: h1;
+}
+.section{
+    grid-area: section;  
+}
+.pie{
+    grid-area: pie;
+}
+
+}
