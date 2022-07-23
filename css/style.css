@@ -11,8 +11,9 @@ h1 {
     text-align: center;
     padding: 10px 0;
     animation-name: aparecer2;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
+
 h2 {
     color: black;
     font-size: 1.2em;
@@ -37,18 +38,23 @@ p{
     background-color:rgba(34, 91, 16, .8);
 }
 
-nav div a{
+#navBar div a{
     display: flex;
     justify-content: center;
 }
 
-nav div a img{
-    width: 50%;
+#navBar img{
+    width: 70%;
 }
 
-nav ul li a {
+#navBar div ul li a {
     font-size: 1.2em;
     font-weight: 600;
+    color: black;
+}
+
+#navBar div ul li a:hover{
+    color: white;
 }
 
 .bg-greenl1{
@@ -81,6 +87,7 @@ section div figure a {
 }
 section div figure a img {
     width: 70%;
+    border: solid black 1px;
 }
 section article a {
     color: black;
@@ -172,6 +179,19 @@ aside ul a{
 nav div a img{
     width: 80%;
 }
+
+section div figure a img:hover{
+    animation-name: aparecer1;
+    animation-duration: 1s;
+}
+@keyframes aparecer1{
+    from{opacity: 0.7;}
+    to{opacity: 1;}
+    }
+.animate-aparecer2{
+    animation-name: aparecer2;
+    animation-duration: 3s;
+}    
 .nav__w{
     width: 100%;
 }
